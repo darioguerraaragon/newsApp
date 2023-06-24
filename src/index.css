@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: burlywood;
+  border-radius: 10px;
+}
+
+.logo {
+  width: 5%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border: solid 1px black;
+  border-radius: 5px;
+  width: 25%;
+  height: 100%;
+}
+
+.search div {
+  width: 5%;
+  height: 5vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.search img {
+  width: 100%;
+}
+
+.input {
+  height: 5vh;
+  outline: none;
+  border: none;
+  background-color: burlywood;
+
+}
+
+.search button {
+  padding: 5px;
+  width: 20%;
+  border: none;
+  background-color: red;
+  color: white;
+  border-left: solid 1px black;
+}
+
+.search button:hover {
+  background-color: rgb(224, 220, 220);
+}
+
+/* section */
+
+section {
+  max-height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+
+/* articles */
+.article1 {
+  width: 65%;
+  height: 85vh;
+  border-radius: 7px;
+  box-shadow: rgba(99, 99, 99, 0.2) 1px 2px 10px 2px;
+  margin-top: 1.2%;
+}
+
+.urlImg {
+  width: 85%;
+  height: 70%;
+}
+
+.MoreNews {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.MoreNews h2 {
+  color: red;
+}
+
+.MoreNews .content {
+  font-weight: bold;
+  width: 90%;
+}
+
+.MoreNews img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.MoreNews .newLink {
+  width: 50%;
+  background-color: red;
+  border-radius: 7px;
+}
+
+.MoreNews .newLink .Link {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  width: 100%;
+}
+
+.article2 {
+  width: 28%;
+  max-height: 100vh;
+  border-radius: 7px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.randomNews {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 60vh;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 10px 9px; */
+  box-shadow: rgba(99, 99, 99, 0.2) 1px 5px 10px 5px;
+  border-radius: 7px;
+  margin-top: 5%;
+}
+
+.randomImg {
+  width:95%;
+}
+
+.randomNews img {
+  width: 100%;
+  border-radius: 7px;
+}
