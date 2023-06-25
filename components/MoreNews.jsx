@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter , Link } from 'react-router-dom'
 
 const MoreNews = ({news}) => {
-  const {title , urlToImage , url , content} = news
+  const {title , urlToImage , url , author , description , publishedAt} = news
 
   return (
     <div className='MoreNews'>
@@ -12,12 +12,20 @@ const MoreNews = ({news}) => {
         <img src={urlToImage} alt='Something went wrong !'/>
         </div>
 
-        <div className='content'>{content}</div>
+        <div className='content'>{description}</div>
 
-        <div className='newLink'>
-          <BrowserRouter>
-            <Link to={url} target="_blank" className='Link'><b>Ver Noticia !</b></Link>
-          </BrowserRouter>
+        <div className='contentLink'>
+
+          <div className='author'><b>Author -</b>{author}</div>
+
+          <div className='newLink'>
+            <BrowserRouter>
+              <Link to={url} target="_blank" className='Link'><b>Ver Noticia !</b></Link>
+            </BrowserRouter>
+          </div>
+
+          <div className='publishedAt'>{publishedAt}</div>
+         
         </div>
     </div>
   )

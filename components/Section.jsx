@@ -1,11 +1,10 @@
 import React from 'react'
-import NewsArticles from './NewsArticles'
-import RandomNews from './RandomNews'
+import News from './News'
 import MoreNews from './MoreNews'
 
 const Section = ({news ,setdata , datardm}) => {
-  const {title , content} = news
-  console.log(title , content)
+  const {title , content , author , description , publishedAt  } = news
+  // console.log(datardm)
 
   return (
     <section>
@@ -14,7 +13,7 @@ const Section = ({news ,setdata , datardm}) => {
         </article>
 
         <article className='article2'>
-          {datardm == undefined?null:datardm.map((randN)=>(<RandomNews randN={randN} setdata={setdata} />))}
+          {datardm == undefined?null:datardm.map((randN)=>(<News randN={randN} setdata={setdata} />))}
         </article>
     </section>
   )

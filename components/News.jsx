@@ -1,11 +1,10 @@
 import React from 'react'
-import { BrowserRouter , Link } from 'react-router-dom'
 
 const RandomNews = ({ randN , setdata }) => {
-  const {title , urlToImage , url , content} = randN
+  const {title , urlToImage , url , description , author , publishedAt} = randN
 
   const HandleCenter = (e) => {
-    setdata({title , url , urlToImage , content})
+    setdata({title , url , urlToImage , description , author , publishedAt})
   }
   
   return (
