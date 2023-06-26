@@ -12,7 +12,7 @@ header {
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
-  border-bottom: solid black 2px;
+  border-bottom: solid black 1.5px;
 }
 
 .logo {
@@ -63,6 +63,33 @@ header {
 
 .search button:hover {
   background-color: rgb(226, 74, 74);
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.tools {
+  width: 20%;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tools button {
+  color: white;
+  background-color: red;
+  padding: 9px;
+  width: 45%;
+  border-radius: 20px;
+  border: none;
+  font-size: medium;
+}
+
+.tools button:hover{
+  cursor: pointer;
+  background-color: rgb(226, 74, 74);
+  transition: all .5s ease;
 }
 
 /* section */
@@ -82,7 +109,7 @@ section {
   height: 85vh;
   border-radius: 7px;
   box-shadow: rgba(99, 99, 99, 0.2) 1px 2px 10px 2px;
-  margin-top: 1.2%;
+  margin-top: 1%;
 }
 
 .urlImg {
@@ -137,6 +164,18 @@ section {
   width: 100%;
 }
 
+ .MoreNews .like {
+  width: 2.5%;
+}
+
+.like img {
+  width: 100%;
+}
+
+.like:hover {
+  cursor: pointer;
+}
+
 .article2 {
   width: 28%;
   max-height: 100vh;
@@ -173,7 +212,7 @@ section {
   /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 10px 9px; */
   box-shadow: rgba(99, 99, 99, 0.2) 1px 5px 10px 5px;
   border-radius: 7px;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .randomImg {
