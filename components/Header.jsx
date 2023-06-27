@@ -31,7 +31,19 @@ const Header = ({setdatardm}) => {
         <div className='tools'>
           <button onClick={(()=>{HandleRandomNews(setdatardm , 'https://newsapi.org/v2/top-headlines?country=us')})}><b>Home</b></button>
           <button><b>Subscrive</b></button>
+
+          <select onClick={((e)=>{HandleRandomNews(setdatardm , `https://newsapi.org/v2/top-headlines?category=${e.target.value}&apiKey=81faba4f6f24441693888487f61060c1`)})}>
+            <option>business</option>
+            <option>entertainment</option>
+            <option>general</option>
+            <option>health</option>
+            <option>science</option>
+            <option>sports</option>
+            <option>technology</option>
+            <option>sources</option>
+          </select>
         </div>
+
     </header>
   )
 }

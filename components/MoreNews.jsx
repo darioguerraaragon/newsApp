@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter , Link } from 'react-router-dom'
-import { useRef } from 'react'
+import { useRef , useEffect} from 'react'
 
 const MoreNews = ({news , handlelike , sethandlelike}) => {
   const {title , urlToImage , url , author , description , publishedAt} = news
@@ -13,11 +13,14 @@ const MoreNews = ({news , handlelike , sethandlelike}) => {
   const fechaLegible = fecha.toLocaleString('es-ES', opcionesFormato);
   
   //likes
-  if(handlelike){
-    like.current.src = '/imgs/heart (1).png'
-  }else{
-    like.current.src = '/imgs/heart.png'
-  }
+  useEffect(() => {
+    if(handlelike){
+      like.current.src = '/imgs/heart (1).png'
+    }else{
+      like.current.src = '/imgs/heart.png'
+    }
+  }, [handlelike])
+  
   //
   return (
     <div className='MoreNews'>
