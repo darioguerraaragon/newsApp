@@ -20,3 +20,5 @@ export const HandleRandomNews = async (setdatardm , url) => {
                  .catch((err)=>{console.log(err)})
  }
 prueba()*/
+
+// https://newsapi.org/v2/top-headlines?country=de&category=business&apiKey=81faba4f6f24441693888487f61060c1
