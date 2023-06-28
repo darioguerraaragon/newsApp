@@ -215,7 +215,7 @@ section {
   background-color: orange;
   border-radius: 20px;
   height: 10%;
-  border: solid black 2px;
+  /* border: solid black 2px; */
 }
 
 .randomNews {
